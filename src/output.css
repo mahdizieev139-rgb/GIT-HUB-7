@@ -170,6 +170,12 @@
   .m-auto {
     margin: auto;
   }
+  .mx-30 {
+    margin-inline: calc(var(--spacing) * 30);
+  }
+  .my-30 {
+    margin-block: calc(var(--spacing) * 30);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -257,6 +263,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .py-\[10px\] {
     padding-block: 10px;
