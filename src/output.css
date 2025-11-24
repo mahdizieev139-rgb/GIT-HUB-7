@@ -10,6 +10,14 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
@@ -170,6 +178,9 @@
   .m-auto {
     margin: auto;
   }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
+  }
   .mx-30 {
     margin-inline: calc(var(--spacing) * 30);
   }
@@ -194,6 +205,12 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
+  }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .ml-\[-50px\] {
     margin-left: -50px;
   }
@@ -209,11 +226,20 @@
   .h-\[48px\] {
     height: 48px;
   }
+  .h-\[812px\] {
+    height: 812px;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
   .w-\[326px\] {
     width: 326px;
+  }
+  .w-\[600\] {
+    width: 600;
+  }
+  .w-\[600px\] {
+    width: 600px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -276,6 +302,9 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
   .pl-20 {
     padding-left: calc(var(--spacing) * 20);
   }
@@ -285,6 +314,22 @@
   .pl-50 {
     padding-left: calc(var(--spacing) * 50);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
@@ -293,6 +338,9 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -300,6 +348,10 @@
     text-decoration-line: underline;
   }
   .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .outline-1 {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
